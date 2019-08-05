@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    tools:context=".activity.PagamentoActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/raleway_bold"
+        android:text="FORMA DE PAGAMENTO"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginEnd="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/ativar_credito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView8"
+            android:layout_below="@+id/ativar_debito"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="1dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/raleway"
+            android:paddingStart="30dp"
+            android:text="CRÉDITO (PRESENCIAL)"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/ativar_paypal2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView8"
+            android:layout_below="@+id/ativar_dinheiro"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/raleway"
+            android:paddingStart="30dp"
+            android:text="PayPal"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/ativar_dinheiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_alignBottom="@+id/imagem_paypal2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/imagem_paypal2"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/raleway"
+            android:paddingStart="30dp"
+            android:text="Dinheiro"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Escolha uma forma de pagamento para ficar salvo na hora de pedir suas corridas"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+
+        <Button
+            android:id="@+id/ativar_debito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView8"
+            android:layout_below="@+id/ativar_paypal2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/raleway"
+            android:paddingStart="30dp"
+            android:text="Débito (PRESENCIAL)"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/limpar_pagamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ativar_credito"
+            android:layout_marginTop="76dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/raleway"
+            android:text="LIMPAR FORMAS DE PAGAMENTO"
+            android:textColor="@color/myRed" />
+
+    </RelativeLayout>
+</RelativeLayout>

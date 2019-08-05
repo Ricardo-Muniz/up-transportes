@@ -1,0 +1,277 @@
+<resources>
+    <string name="app_name">UP</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="titulo_cadastro">Cadastrar uma conta</string>
+    <string name="titulo_login">Acessar minha conta</string>
+    <string name="title_activity_passageiro">PassageiroActivity</string>
+    <string name="title_activity_corrida">CorridaActivity</string>
+    <string name="facebook_app_id">419794152207549</string>
+    <string name="fb_login_protocol_scheme">e6ce83ae68f671007379b51807a55e71</string>
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
+    <string name="title_activity_suporte">SuporteActivity</string>
+
+    <string-array name="ano_carro">
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+
+    <string-array name="cores_carro">
+        <item>Abóbora</item>
+        <item>Água</item>
+        <item>Água-marinha</item>
+        <item>Água-marinha média</item>
+        <item>Alizarim</item>
+        <item>Amarelo</item>
+        <item>Amarelo claro</item>
+        <item>Amarelo esverdeado</item>
+        <item>Amarelo ouro claro</item>
+        <item>Amarelo queimado</item>
+        <item>Âmbar</item>
+        <item>Ameixa</item>
+        <item>Ametista</item>
+        <item>Amêndoa</item>
+        <item>Aspargo</item>
+        <item>Azul</item>
+        <item>Azul alice</item>
+        <item>Azul ardósia</item>
+        <item>Azul areado</item>
+        <item>Azul aço</item>
+        <item>Azul cadete</item>
+        <item>Azul camarada</item>
+        <item>Azul celeste</item>
+        <item>Azul claro</item>
+        <item>Azul cobalto</item>
+        <item>Azul céu</item>
+        <item>Azul escuro</item>
+        <item>Azul flor de milho</item>
+        <item>Azul furtivo</item>
+        <item>Azul manteiga</item>
+        <item>Azul marinho</item>
+        <item>Azul meia-noite</item>
+        <item>Azul médio</item>
+        <item>Azul petróleo</item>
+        <item>Azul pólvora</item>
+        <item>Azul real</item>
+        <item>Azul violeta</item>
+        <item>Açafrão</item>
+        <item>Bege</item>
+        <item>Bordô</item>
+        <item>Borgonha</item>
+        <item>Branco</item>
+        <item>Branco antigo</item>
+        <item>Branco fantasma</item>
+        <item>Branco floral</item>
+        <item>Branco fumaça</item>
+        <item>Branco navajo</item>
+        <item>Bronze</item>
+        <item>Caqui</item>
+        <item>Cardo</item>
+        <item>Carmesim</item>
+        <item>Castanho avermelhado</item>
+        <item>Castanho claro</item>
+        <item>Cenoura</item>
+        <item>Cereja</item>
+        <item>Chocolate</item>
+        <item>Ciano claro</item>
+        <item>Ciano escuro</item>
+        <item>Cinza</item>
+        <item>Cinza ardósia</item>
+        <item>Cinza ardósia claro</item>
+        <item>Cinza ardósia escuro</item>
+        <item>Cinza claro</item>
+        <item>Cinza escuro</item>
+        <item>Cinza fosco</item>
+        <item>Cinza médio</item>
+        <item>Cobre</item>
+        <item>Concha</item>
+        <item>Coral</item>
+        <item>Coral claro</item>
+        <item>Couro</item>
+        <item>Creme</item>
+        <item>Creme de marisco</item>
+        <item>Creme de menta</item>
+        <item>Caqui escuro</item>
+        <item>Damasco</item>
+        <item>Dourado</item>
+        <item>Dourado escuro</item>
+        <item>Dourado pálido</item>
+        <item>Escarlate</item>
+        <item>Esmeralda</item>
+        <item>Feldspato</item>
+        <item>Ferrugem</item>
+        <item>Fuligem</item>
+        <item>Fúchsia</item>
+        <item>Grená</item>
+        <item>Hortelã</item>
+        <item>Índigo</item>
+        <item>Jade</item>
+        <item>Jambo</item>
+        <item>Laranja</item>
+        <item>Laranja escuro</item>
+        <item>Lavanda</item>
+        <item>Lavanda avermelhada</item>
+        <item>Lilás</item>
+        <item>Lima</item>
+        <item>Limão</item>
+        <item>Linho</item>
+        <item>Loiro</item>
+        <item>Madeira</item>
+        <item>Magenta</item>
+        <item>Magenta escuro</item>
+        <item>Malva</item>
+        <item>Mamão batido</item>
+        <item>Maná</item>
+        <item>Marfim</item>
+        <item>Marrom</item>
+        <item>Marrom amarelado</item>
+        <item>Marrom claro</item>
+        <item>Marrom rosado</item>
+        <item>Marrom sela</item>
+        <item>Milho</item>
+        <item>Milho Claro</item>
+        <item>Mocassim</item>
+        <item>Mostarda</item>
+        <item>Naval</item>
+        <item>Neve</item>
+        <item>Ocre</item>
+        <item>Oliva</item>
+        <item>Oliva escura</item>
+        <item>Oliva parda</item>
+        <item>Orquídea</item>
+        <item>Orquídea escura</item>
+        <item>Orquídea média</item>
+        <item>Ouro</item>
+        <item>Prata</item>
+        <item>Preto</item>
+        <item>Púrpura</item>
+        <item>Rosa</item>
+        <item>Rosa claro</item>
+        <item>Rosa embaçado</item>
+        <item>Roxo</item>
+        <item>Rútilo</item>
+        <item>Salmão</item>
+        <item>Salmão claro</item>
+        <item>Salmão escuro</item>
+        <item>Seda</item>
+        <item>Siena</item>
+        <item>Sépia</item>
+        <item>Tan</item>
+        <item>Terracota</item>
+        <item>Tijolo refratário</item>
+        <item>Tomate</item>
+        <item>Trigo</item>
+        <item>Triássico</item>
+        <item>Turquesa</item>
+        <item>Turquesa escura</item>
+        <item>Turquesa média</item>
+        <item>Turquesa pálida</item>
+        <item>Irucum</item>
+        <item>Verde</item>
+        <item>Verde espectro</item>
+        <item>Verde amarelado</item>
+        <item>Verde claro</item>
+        <item>Verde escuro</item>
+        <item>Verde floresta</item>
+        <item>Verde fluorescente</item>
+        <item>Verde lima</item>
+        <item>Verde grama</item>
+        <item>Verde mar claro</item>
+        <item>Verde mar escuro</item>
+        <item>Verde mar médio</item>
+        <item>Verde militar</item>
+        <item>Verde Paris</item>
+        <item>Verde primavera</item>
+        <item>Verde pálido</item>
+        <item>Verde-azulado</item>
+        <item>Vermelho</item>
+        <item>Vermelho escuro</item>
+        <item>Vermelho indiano</item>
+        <item>Vermelho violeta</item>
+        <item>Vermelho violeta pálido</item>
+        <item>Violeta</item>
+        <item>Violeta escuro</item>
+    </string-array>
+
+    <string-array name="marcas_carro">
+        <item>Agrale</item>
+        <item>Aston Martin</item>
+        <item>Audi</item>
+        <item>Bentley</item>
+        <item>BMW</item>
+        <item>BYD</item>
+        <item>CAOA Chery</item>
+        <item>Changan</item>
+        <item>Chevrolet</item>
+        <item>Chrysler</item>
+        <item>Citroën</item>
+        <item>Dodge</item>
+        <item>Dongfeng</item>
+        <item>Effa</item>
+        <item>Ferrari</item>
+        <item>Fiat</item>
+        <item>Ford</item>
+        <item>Foton</item>
+        <item>Geely</item>
+        <item>Hafei</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Iveco</item>
+        <item>JAC</item>
+        <item>Jaguar</item>
+        <item>Jeep</item>
+        <item>Jinbei</item>
+        <item>Kia</item>
+        <item>Lamborghini</item>
+        <item>Land Rover</item>
+        <item>Lexus</item>
+        <item>Lifan</item>
+        <item>Maserati</item>
+        <item>McLaren</item>
+        <item>Mercedes-AMG</item>
+        <item>Mercedes-Benz</item>
+        <item>Mini</item>
+        <item>Mitsubishi</item>
+        <item>Nissan</item>
+        <item>Peugeot</item>
+        <item>Porsche</item>
+        <item>RAM</item>
+        <item>Rely</item>
+        <item>Renault</item>
+        <item>Rolls-Royce</item>
+        <item>Shineray</item>
+        <item>Smart</item>
+        <item>SsangYong</item>
+        <item>Subaru</item>
+        <item>Suzuki</item>
+        <item>TAC</item>
+        <item>Tesla</item>
+        <item>Toyota</item>
+        <item>Troller</item>
+        <item>Volkswagen</item>
+        <item>Volvo</item>
+        <item>Alfa Romeo</item>
+        <item>Cadillac</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

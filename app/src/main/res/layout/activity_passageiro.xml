@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.upbrasil.up.activity.PassageiroActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_passageiro" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/basic_border_radius"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <fragment
+                android:id="@+id/autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/basic_border_radius"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <fragment
+                android:id="@+id/autocomplete_fragment_destino"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/botao_sidebarmenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_user_maps"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="start|top"
+        app:srcCompat="@drawable/menu" />
+
+    <ImageButton
+        android:id="@+id/botao_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/myBlue"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="end|bottom"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <Button
+        android:id="@+id/buttonChamarUber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_degrade_color"
+        android:fontFamily="@font/raleway_bold"
+        android:onClick="chamarUber"
+        android:text="CHAMAR UP"
+        android:textColor="@android:color/white"
+        android:theme="@style/botaoPadrao" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

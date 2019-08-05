@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "870052019597",
+    "firebase_url": "https://up-database-c112f.firebaseio.com",
+    "project_id": "up-database-c112f",
+    "storage_bucket": "up-database-c112f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870052019597:android:351dc5d0618d8ad2",
+        "android_client_info": {
+          "package_name": "com.upbrasil.up"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870052019597-4nqna5ccb0umbpcqu7aehkph0mqduqub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.upbrasil.up",
+            "certificate_hash": "4b79fef0b4da054342de113960449f1007f6fbd4"
+          }
+        },
+        {
+          "client_id": "870052019597-0j1iditdrhsgihprueki8g2okfcigcem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6jNpOdBepsD_6CqFMA6pFIrJd3GXoTE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870052019597-0j1iditdrhsgihprueki8g2okfcigcem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

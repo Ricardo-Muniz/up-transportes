@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_confirm_color"
+    android:orientation="vertical">
+
+
+
+
+
+            <ImageButton
+                android:id="@+id/botao_fechar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/content_preview_corrida"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/botao_fechar"
+                android:layout_marginTop="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/include"
+        android:layout_height="400dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:alpha="0.9"
+        android:background="@drawable/degrade_confirm_color">
+
+
+
+        <TextView
+            android:id="@+id/nome_passageiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foto_passageiro"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:fontFamily="@font/raleway_bold"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/rua_destino2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/foto_passageiro"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toEndOf="@+id/foto_passageiro"
+            android:fontFamily="@font/open_sans"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:text="5.0"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rua_partida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/rua_destino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rua_partida"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/open_sans"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/foto_passageiro"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rua_destino"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/man" />
+
+            <Button
+                android:id="@+id/botao_confirmar_corrida"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/nome_passageiro"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_degrade_color"
+                android:fontFamily="@font/raleway_bold"
+                android:onClick="chamarUber"
+                android:text="ACEITAR CORRIDA"
+                android:textColor="@android:color/white"
+                android:theme="@style/botaoPadrao" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

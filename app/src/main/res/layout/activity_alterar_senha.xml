@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    tools:context=".activity.AlterarSenhaActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/raleway_bold"
+        android:text="ALTERAR SENHA"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginEnd="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/raleway"
+            android:textColor="@android:color/black"
+            android:text="NOVA SENHA" />
+
+        <EditText
+            android:id="@+id/campo_alterar_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView19"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_alignEnd="@+id/textView19"
+            android:layout_alignRight="@+id/textView19"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:textSize="14dp"
+            android:fontFamily="@font/open_sans" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campo_alterar_senha"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/raleway"
+            android:textColor="@android:color/black"
+            android:text="CONFIRME A SENHA" />
+
+        <EditText
+            android:id="@+id/campo_confirmar_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView18"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_alignEnd="@+id/textView19"
+            android:layout_alignRight="@+id/textView19"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:textSize="14dp"
+            android:fontFamily="@font/open_sans" />
+
+        <Button
+            android:id="@+id/botao_alterar_senha"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/campo_confirmar_senha"
+            android:layout_alignStart="@+id/campo_confirmar_senha"
+            android:layout_alignLeft="@+id/campo_confirmar_senha"
+            android:layout_alignEnd="@+id/textView19"
+            android:layout_alignRight="@+id/textView19"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:height="50dp"
+            android:background="@color/myGreen"
+            android:fontFamily="@font/raleway_bold"
+            android:text="ALTERAR"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>

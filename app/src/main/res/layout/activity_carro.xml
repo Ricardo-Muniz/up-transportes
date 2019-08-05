@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/degrade_color"
+    tools:context="com.upbrasil.up.activity.motorista.CarroActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/raleway_bold"
+        android:text="VEÍCULO"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginEnd="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:background="@color/myGrey"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/label_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@+id/view2"
+                android:fontFamily="@font/raleway"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/black"
+                android:text="MARCA" />
+
+            <AutoCompleteTextView
+                android:id="@+id/campo_marca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/view2"
+                android:background="@android:color/white"
+                android:fontFamily="@font/open_sans"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/label_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/view2"
+                android:fontFamily="@font/raleway"
+                android:text="MODELO"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/campo_modelo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/view2"
+                android:background="@android:color/white"
+                android:fontFamily="@font/open_sans"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/label_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campo_marca"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@+id/view2"
+                android:fontFamily="@font/raleway"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/black"
+                android:text="ANO" />
+
+            <AutoCompleteTextView
+                android:id="@+id/campo_ano"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_3"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/view2"
+                android:background="@android:color/white"
+                android:fontFamily="@font/open_sans"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/label_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campo_modelo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/view2"
+                android:fontFamily="@font/raleway"
+                android:text="PLACA"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/campo_placa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/view2"
+                android:background="@android:color/white"
+                android:fontFamily="@font/open_sans"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:maxLength="7"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/label_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campo_placa"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="COR"
+                android:textColor="@android:color/black" />
+
+            <AutoCompleteTextView
+                android:id="@+id/campo_cor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:fontFamily="@font/open_sans"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/label_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campo_cor"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/raleway"
+                android:text="IMAGENS"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:id="@+id/imagens_carro"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/label_6"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/foto_frente"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/add_imagem" />
+
+                <ImageView
+                    android:id="@+id/foto_dianteira"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/add_imagem" />
+
+                <ImageView
+                    android:id="@+id/foto_dentro"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/add_imagem" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/label_imagens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagens_carro"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Nos envie foto da frente, dianteira e dentro de seu veículo"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/botao_continuar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_imagens"
+                android:layout_marginTop="30dp"
+                android:background="@color/myGreen"
+                android:fontFamily="@font/raleway_bold"
+                android:text="CONTINUAR"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

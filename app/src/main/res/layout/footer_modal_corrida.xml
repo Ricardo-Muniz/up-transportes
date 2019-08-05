@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:id="@+id/footer_layout">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="start"
+        android:text="R$ 200 00"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/rua_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Ubirajara Otávio de Oliveira, 156, Jardim Mirna, São Paulo"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/rua_partida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/myGrey" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/open_sans"
+        android:text="Ubirajara Otávio de Oliveira, 156, Jardim Mirna, São Paulo"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/buttonChamarUber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView11"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_degrade_color"
+        android:fontFamily="@font/raleway_bold"
+        android:onClick="chamarUber"
+        android:text="CONFIRMAR CORRIDA"
+        android:textColor="@android:color/white"
+        android:theme="@style/botaoPadrao" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/raleway"
+        android:text="DINHEIRO"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="10sp" />
+
+</RelativeLayout>

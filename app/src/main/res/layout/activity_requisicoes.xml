@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.upbrasil.up.activity.RequisicoesActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_motorista" />
+
+    <ImageButton
+        android:id="@+id/botao_sidebarmenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_user_maps"
+        android:padding="6dp"
+        android:scaleType="fitCenter"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="start|top"
+        app:srcCompat="@drawable/menu" />
+
+    <Button
+        android:id="@+id/botao_iniciar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_degrade_confirm_color"
+        android:fontFamily="@font/raleway_bold"
+        android:text="INICIAR"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:theme="@style/botaoPadrao"
+        android:visibility="visible"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="bottom|center" />
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

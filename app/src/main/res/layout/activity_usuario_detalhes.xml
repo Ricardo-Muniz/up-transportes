@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    tools:context=".activity.admin.UsuarioDetalhesActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/botao_voltar"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="LUIZ FELIPE SOARES DA SILVA"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/imagem_tipo_usuario"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imageView7"
+            android:layout_alignStart="@+id/imageView7"
+            android:layout_alignLeft="@+id/imageView7"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/icon" />
+
+        <Button
+            android:id="@+id/btn_deletar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@color/myRed"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="DELETAR USUÁRIO"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/man" />
+
+        <TextView
+            android:id="@+id/nome_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:layout_alignStart="@+id/imageView7"
+            android:layout_alignLeft="@+id/imageView7"
+            android:layout_alignEnd="@+id/imageView7"
+            android:layout_alignRight="@+id/imageView7"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/email_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nome_usuario"
+            android:layout_alignStart="@+id/nome_usuario"
+            android:layout_alignLeft="@+id/nome_usuario"
+            android:layout_alignEnd="@+id/nome_usuario"
+            android:layout_alignRight="@+id/nome_usuario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="@font/lato"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imagem_perfil_verificado"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imagem_tipo_usuario"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/checked" />
+
+        <Button
+            android:id="@+id/btn_aprovar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_usuario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/quantum_googgreenA400"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="APROVAR"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

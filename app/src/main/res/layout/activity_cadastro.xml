@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    android:id="@+id/tela"
+    tools:context="com.upbrasil.up.activity.CadastroActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/raleway_bold"
+        android:text="PREENCHA AS INFORMAÇOES"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginEnd="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="1800dp"
+        android:background="@color/myGrey"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="1800dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <RelativeLayout
+                android:id="@+id/box_foto_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent">
+
+                <ImageView
+                    android:id="@+id/imagem_perfil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    app:srcCompat="@drawable/adicionar_foto_perfil" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/label_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/box_foto_perfil"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:textColor="@android:color/black"
+                android:text="NOME COMPLETO" />
+
+            <EditText
+                android:id="@+id/campo_nome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_1"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:textSize="14dp"
+                android:fontFamily="@font/open_sans" />
+
+            <TextView
+                android:id="@+id/label_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/campo_nome"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:textColor="@android:color/black"
+                android:text="EMAIL" />
+
+            <EditText
+                android:id="@+id/campo_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_2"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:textSize="14dp"
+                android:fontFamily="@font/open_sans" />
+
+            <TextView
+                android:id="@+id/label_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/campo_email"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:textColor="@android:color/black"
+                android:text="SENHA" />
+
+            <EditText
+                android:id="@+id/campo_senha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_3"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:textSize="14dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/open_sans" />
+
+            <TextView
+                android:id="@+id/text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/campo_senha"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:text="Sua senha precisa ter no minimo 8 caracteres, 1 letra, 1 número e um caractere especial" />
+
+            <TextView
+                android:id="@+id/label_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_password"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway"
+                android:textColor="@android:color/black"
+                android:text="CONFIRME A SENHA" />
+
+            <EditText
+                android:id="@+id/campo_confirmar_senha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/label_4"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:textSize="14dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/open_sans" />
+
+            <View
+                android:id="@+id/divisor"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/campo_confirmar_senha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/btn_passageiro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/campo_confirmar_senha"
+                android:layout_alignStart="@+id/campo_email"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@+id/divisor"
+                android:background="@drawable/degrade_color"
+                android:fontFamily="@font/raleway"
+                android:text="Passageiro"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_motorista"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/campo_confirmar_senha"
+                android:layout_alignEnd="@+id/campo_email"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/divisor"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/raleway"
+                android:text="Motorista"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/botao_cadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_motorista"
+                android:layout_marginTop="30dp"
+                android:background="@color/myGreen"
+                android:fontFamily="@font/raleway_bold"
+                android:text="CADASTRAR"
+                android:textColor="@android:color/white" />
+
+            <RelativeLayout
+                android:id="@+id/box_motorista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/botao_cadastrar"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:layout_marginTop="-50dp">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp" />
+
+                <TextView
+                    android:id="@+id/label_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/view2"
+                    android:fontFamily="@font/raleway"
+                    android:text="MARCA"
+                    android:textColor="@android:color/black" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/campo_marca"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/label_10"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/view2"
+                    android:background="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/label_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/view2"
+                    android:fontFamily="@font/raleway"
+                    android:text="MODELO"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/campo_modelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/label_9"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/view2"
+                    android:background="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/label_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/campo_marca"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/view2"
+                    android:fontFamily="@font/raleway"
+                    android:text="ANO"
+                    android:textColor="@android:color/black" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/campo_ano"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/label_8"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/view2"
+                    android:background="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/label_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/campo_modelo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/view2"
+                    android:fontFamily="@font/raleway"
+                    android:text="PLACA"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/campo_placa"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/label_7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/view2"
+                    android:background="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:maxLength="7"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/label_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/campo_placa"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="COR"
+                    android:textColor="@android:color/black" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/campo_cor"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/label_5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/label_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/campo_cor"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="IMAGENS"
+                    android:textColor="@android:color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/imagens_carro"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/label_6"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/foto_frente"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/add_imagem" />
+
+                    <ImageView
+                        android:id="@+id/foto_dianteira"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/add_imagem" />
+
+                    <ImageView
+                        android:id="@+id/foto_dentro"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/add_imagem" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/label_imagens_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imagens_carro"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Nos envie foto da frente, dianteira e dentro de seu veículo"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/label_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/raleway"
+                    android:layout_below="@id/label_imagens_doc"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="TIPO DE DOCUMENTO" />
+
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/label_14"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:id="@+id/label_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner"
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="NUMERO DE IDENTIDADE" />
+
+                <EditText
+                    android:id="@+id/campo_num_identidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/label_13"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/black"
+                    android:textAllCaps="true"
+                    android:inputType="number"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/label_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/campo_num_identidade"
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/black"
+                    android:text="IMAGENS" />
+
+                <RelativeLayout
+                    android:id="@+id/img_doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/label_11"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/foto_doc_frente"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_toStartOf="@+id/divisor_doc"
+                        app:srcCompat="@drawable/add_imagem" />
+
+                    <ImageView
+                        android:id="@+id/foto_doc_verso"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/divisor_doc"
+                        app:srcCompat="@drawable/add_imagem" />
+
+                    <View
+                        android:id="@+id/divisor_doc"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/label_imagens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_doc"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Nos envie foto da frente e verso do seu documento selecionado, e garanta que está totalmente visível"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+
+
+                <Button
+                    android:id="@+id/botao_cadastrar_motorista"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/label_imagens"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/myGreen"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="CADASTRAR"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

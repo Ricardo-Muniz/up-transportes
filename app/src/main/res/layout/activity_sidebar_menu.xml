@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    tools:context=".activity.ConfiguracoesActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/raleway_bold"
+        android:text="menu principal"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginEnd="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myGrey"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp">
+
+        <ListView
+            android:id="@+id/lista_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp" />
+
+        <ImageView
+            android:id="@+id/perfil_usuario"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/man" />
+
+        <TextView
+            android:id="@+id/nome_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/perfil_usuario"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="LUIZ FELIPE SOARES DA SILVA"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nome_usuario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@android:drawable/star_off"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center_vertical"
+            android:text="5.0"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

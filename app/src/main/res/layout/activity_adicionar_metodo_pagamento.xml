@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    tools:context=".activity.AdicionarMetodoPagamentoActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/botao_voltar"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="PayPal"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/campo_email"
+            android:layout_alignStart="@+id/campo_email"
+            android:layout_alignLeft="@+id/campo_email"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="SENHA " />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato"
+            android:text="Insira as suas credenciais do PayPal abaixo para salvar o método de pagamento"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/campo_email"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView18"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_alignRight="@+id/textView13"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:elegantTextHeight="false"
+            android:ems="10"
+            android:fontFamily="@font/lato"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_alignStart="@+id/textView13"
+            android:layout_alignLeft="@+id/textView13"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="29dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="EMAIL" />
+
+        <EditText
+            android:id="@+id/campo_alterar_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignStart="@+id/textView18"
+            android:layout_alignLeft="@+id/textView18"
+            android:layout_alignEnd="@+id/textView13"
+            android:layout_alignRight="@+id/textView13"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:elegantTextHeight="false"
+            android:ems="10"
+            android:fontFamily="@font/lato"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/botao_salvar_paypal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/campo_alterar_senha"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/quantum_googgreen500"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="SALVAR"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/paypal" />
+
+    </RelativeLayout>
+</RelativeLayout>

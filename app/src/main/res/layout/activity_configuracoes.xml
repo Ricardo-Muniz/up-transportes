@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    tools:context=".activity.ConfiguracoesActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/raleway_bold"
+        android:text="INFORMAÇÕES PESSOAIS"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginEnd="35dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_below="@+id/titulo_navbar"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <Button
+                android:id="@+id/excluir_conta"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/quarta_borda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/raleway"
+                android:text="Excluir minha conta"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/alterar_senha"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/terceira_borda"
+                android:layout_alignStart="@+id/terceira_borda"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/raleway"
+                android:text="Alterar Senha"
+                android:textAlignment="viewStart"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:id="@+id/quarta_borda"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/alterar_senha"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/myGrey">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/terceira_borda"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/alterar_email"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/myGrey">
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/email_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/terceira_borda"
+                android:layout_alignTop="@+id/alterar_email"
+                android:layout_alignEnd="@+id/alterar_perfil"
+                android:fontFamily="@font/open_sans"
+                android:text="luizestudante.eng@gmail.com"
+                android:textColor="@color/myOtherGrey"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/alterar_email"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/segunda_borda"
+                android:layout_alignStart="@+id/segunda_borda"
+                android:layout_marginStart="-2dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/raleway"
+                android:text="Alterar Email"
+                android:textAlignment="viewStart"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/alterar_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/foto_profile"
+                android:layout_alignBottom="@+id/foto_profile"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/raleway"
+                android:text="Alterar a imagem de perfil"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/nome_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foto_profile"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/open_sans"
+                android:text="Luiz Felipe Soares da Silva"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/foto_profile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="142dp"
+                app:srcCompat="@drawable/man" />
+
+            <RelativeLayout
+                android:id="@+id/primeira_borda"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/nome_usuario"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="@color/myGrey">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/segunda_borda"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/alterar_telefone"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/myGrey">
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/alterar_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/primeira_borda"
+                android:layout_alignStart="@+id/primeira_borda"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/raleway"
+                android:text="Alterar Telefone"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/usuario_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/segunda_borda"
+                android:layout_alignTop="@+id/alterar_telefone"
+                android:layout_alignEnd="@+id/alterar_perfil"
+                android:fontFamily="@font/open_sans"
+                android:text="11995858888"
+                android:textColor="@color/myOtherGrey"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

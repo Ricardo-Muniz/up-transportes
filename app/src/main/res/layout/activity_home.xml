@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_color"
+    tools:context=".activity.admin.HomeActivity">
+
+    <ImageView
+        android:id="@+id/botao_voltar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/back_icon_white" />
+
+    <TextView
+        android:id="@+id/titulo_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/botao_voltar"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/botao_voltar"
+        android:layout_toRightOf="@+id/botao_voltar"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Aprovar Motoristas"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_below="@id/titulo_navbar"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btn_aprovar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_user"
+                android:layout_alignEnd="@+id/card_user"
+                android:layout_alignRight="@+id/card_user"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="18dp"
+                android:background="@color/quantum_googgreenA400"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="ACEITAR"
+                android:textColor="@color/quantum_white_100"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="30dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="40dp"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:text="SEM RESULTADOS" />
+
+            <RelativeLayout
+                android:id="@+id/card_user"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/card_background">
+
+                <ImageView
+                    android:id="@+id/doc_imagem"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/telefone_usuario"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignRight="@+id/center"
+                    app:srcCompat="@drawable/carr" />
+
+                <ImageView
+                    android:id="@+id/perfil_imagem"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/man"
+                    tools:srcCompat="@drawable/man" />
+
+                <TextView
+                    android:id="@+id/nome_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/perfil_imagem"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="110dp"
+                    android:capitalize="words"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/email_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nome_usuario"
+                    android:layout_alignStart="@+id/nome_usuario"
+                    android:layout_alignLeft="@+id/nome_usuario"
+                    android:layout_alignEnd="@+id/nome_usuario"
+                    android:layout_alignRight="@+id/nome_usuario"
+                    android:layout_marginStart="0dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/telefone_usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_usuario"
+                    android:layout_alignStart="@+id/nome_usuario"
+                    android:layout_alignLeft="@+id/nome_usuario"
+                    android:layout_alignEnd="@+id/nome_usuario"
+                    android:layout_alignRight="@+id/nome_usuario"
+                    android:layout_alignBottom="@+id/imageView9"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="-60dp"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/car_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/telefone_usuario"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/center"
+                    android:layout_toRightOf="@+id/center"
+                    app:srcCompat="@drawable/carr" />
+
+                <RelativeLayout
+                    android:id="@+id/center"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/telefone_usuario"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginLeft="190dp"
+                    android:layout_marginBottom="68dp">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_recusar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_user"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/myRed"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="RECUSAR"
+                android:textColor="@color/quantum_white_100"
+                android:textSize="14dp" />
+
+            <ListView
+                android:id="@+id/lista_usuarios"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/simpleSearchView"
+                android:layout_marginTop="0dp" />
+
+            <SearchView
+                android:id="@+id/simpleSearchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_recusar"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:iconifiedByDefault="false"
+                android:queryHint="Buscar..." />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
